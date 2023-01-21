@@ -1,0 +1,38 @@
+.gallary-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:2rem
+
+    
+}
+.gallary-container article{
+    border: 1rem solid transparent;
+    transition: var(--transtion);
+
+}
+.gallary-container article:hover{
+    border-color: var(--color-gray-500);
+}
+
+
+@media (max-width:1024px) {
+    .gallary-container{
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .gallary-container article{
+        border: 0;
+    };
+
+    
+}
+
+
+@media (max-width:600px) {
+    .gallary-container{
+        grid-template-columns: 1fr ;
+        gap: 1rem;
+    }
+
+    
+}

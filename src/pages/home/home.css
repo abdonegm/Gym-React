@@ -1,0 +1,363 @@
+.main_header{
+    height: calc(100vh - 3rem);
+    width: 100vw;
+    place-items: center;
+    margin-top: 3rem;
+
+}
+.header_container{
+    place-items: center;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    gap: 6rem;
+}
+.header_left{
+    margin-top: -3rem;
+}
+.header_left h4{
+    color: var(--color-sacondary);
+    font-weight: 400;
+    margin-bottom: 1rem;
+
+}
+.header_left p{
+    margin: 1rem 0 3.5rem;
+    font-size: 1.1rem;
+}
+.header_right{
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+.header-circle{
+    width: 25rem;
+    height: 25rem;
+    position: absolute;
+  
+    border-radius: 50%;
+    background:linear-gradient(75deg,var(--color-sacondary),transparent);
+}
+.haeder-image{
+    position: relative;
+}
+.header_right:hover .header-circle{
+    filter: blur(15px); 
+    transition: 2s ease;
+}
+
+/*----programs---*/
+
+.programs{
+    margin-top: 4rem;
+
+
+
+}
+.programs-wrapper{
+margin-top: 4rem;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+ gap: 3rem;
+}
+ .program a{
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .program:hover a{
+    background: var(--color-sacondary);
+ }
+
+
+
+ /*--------home --------*/
+ .values-container{
+    display: grid;
+    grid-template-columns: 38% 50%; 
+    gap:12%
+
+ }
+ .values-right >p{
+    margin: 1.5rem 5rem;
+
+ }
+ .values-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:3rem;
+   
+ }
+
+ .values-image{
+    filter: blur(2px);
+    transition: 1s ease;
+ }
+ .values-image:hover{
+    filter:blur(0px);
+ }
+ .values-right .value{
+    text-align: left;
+    position: relative;
+    padding-top: 3.4rem;
+ }
+ .value span{
+    position: absolute;
+    top: -1.2rem;
+    left: -.8rem;
+ }
+
+ /*---FAD-----*/
+ .ques-wrapper{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem 5rem;
+    align-items: flex-start;
+ }
+ .faq{
+    background: var(--color-gray-500);
+    padding: 2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+ }
+ .faq div{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+ }
+ .faq .faq-icon{
+    background: transparent;
+    color: var(--color-gray-100);
+    font-size: 1.5rem;
+ }
+ .faq p{
+    margin-top: 1rem;
+ }
+
+
+ /*--------Testmonails-*/
+ .testmonials{
+    width: 50rem;
+    margin-inline: auto;
+ }
+ .testmonials h5{
+   margin: 0;
+ }
+ .test-headr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+ }
+ .card.testmonials{
+    position: relative;
+ }
+ .test-avatar{
+    position: absolute;
+    top: -2rem;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 4rem;
+    height: 4rem;
+
+ }
+.test-quote{
+    font-style: italic;
+    margin: 1rem 0rem 2rem;
+}
+.testmonials .btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    gap: 2rem;
+    width: fit-content;
+    margin: 2.5rem auto 0;
+}
+.test-btn{
+    background: var(--color-primary);
+    cursor: pointer;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.test-btn svg {
+    font-size: 1.8rem;
+    
+    height: 2rem;
+    width: 2rem;
+
+    fill: var(--color-gray-500);
+}
+
+
+
+
+
+
+
+/*-----Footer --------*/
+
+footer{
+    background: var(--color-primary);
+    margin-top: 7rem;
+    padding-top: 7rem;
+    font-size: .9rem;
+    color: var(--color-gray-100);
+    padding-bottom: 3rem;
+}
+.foot-container{
+    display: grid;
+    grid-template-columns: 26rem 1fr 1fr 1fr;
+    gap:6rem;
+}
+.foot-container article{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    
+}
+.foot-container article a{
+    color: rgb(202, 202, 202);
+    padding: .3rem;
+}
+.foot-container article h4{
+margin-bottom: .7rem;
+}
+.foot-container article p{
+ margin: .6rem;
+ font-size: 1rem;
+ color: rgb(202, 202, 202);
+}
+.foot-container .social{
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+}
+ .foot-container .social a{
+    background: var(--color-gray-100);
+    padding: 0.7rem;
+    border: 1px solid transparent;
+    border-radius: .6rem;
+    transition: var(--transtion);
+
+ }
+
+ .foot-container a svg{
+    color: var(--color-gray-600);
+ }
+ .foot-container a:hover{
+    border-color: var(--color-gray-100);
+    background: transparent;
+
+ }
+
+
+ /*-----media query ---*/
+ @media (max-width:1024px){
+   .main_header{
+   height: fit-content;
+   padding: 12rem 0;
+   }
+   .header_container{
+      gap: 0;
+   }
+   .header-circle{
+      width: 16rem;
+      height: 16rem;
+   }
+
+   /*program*/
+    .programs-wrapper{
+      grid-template-columns: 1fr 1fr;
+    }
+
+
+    /*values*/
+    .values-container{
+      grid-template-columns:1fr ;
+      justify-content: center;
+      gap: 4rem;
+    }
+    .values-wrapper{
+      gap: 4rem 3rem;
+    }
+    .values-image{
+      display: none;
+    }
+    /*qyestion*/
+    .ques-wrapper{
+      grid-template-columns: 1fr;
+    }
+    /*testmonials*/
+    .testmonials{
+      width: 75%;
+    }
+    /*footer*/
+    .foot-container{
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+
+}
+@media (max-width:600px) {
+   .main_header{
+      margin-top: 0;
+      padding: 12rem 0 0;
+      height: 100vh;
+   }
+   .header-circle,.haeder-image{display: none;}
+   .header_container{
+      grid-template-columns: 1fr;
+   }
+   /*programs*/
+   .programs-wrapper{
+      grid-template-columns: 1fr;
+      gap:2rem;
+      margin-top: 3rem;
+    }
+    .program{
+      width: 85%;
+      margin-inline: auto;
+    }
+ /*values*/
+ .values-wrapper{
+   gap:3rem;
+   grid-template-columns: 1fr;
+ }
+.value{
+   margin-inline:auto ;
+   width: 85%;
+}
+ /*qyestion*/
+ .ques-wrapper{
+   gap: 1rem;
+   margin-top: 3rem;
+ }
+ /*testmonials*/
+ .testmonials{
+   width: 95%;
+   
+ }
+ /*footer*/
+ footer{
+   margin-top: 3rem;
+ }
+ .foot-container{
+   grid-template-columns: 1fr ;
+   gap: 3rem;
+ }
+.foot-container article{
+   align-items: center;
+}
+.foot-container article p{
+   text-align: center;
+}
+
+}
